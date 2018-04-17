@@ -14,17 +14,24 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
+" Lightline config (needs to come before colorscheme)
 let g:lightline = {
       \ 'colorscheme': 'one',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
       \ },
-      \ 'component-function': {
+      \ 'component_function': {
       \   'gitbranch': 'fugitive#head'
       \},
       \}
 colorscheme onedark
+
+" Use arrow keys (because why not?)
+map <D-A-RIGHT> <C-w>l
+map <D-A-LEFT> <C-w>h
+map <D-A-DOWN> <C-w><C-w>
+map <D-A-UP> <C-w>W
 
 set guifont=Menlo\ Regular:h14
 set colorcolumn=90
@@ -52,15 +59,26 @@ set hlsearch
 " nnoremap <silent> <Leader>/ :nohlsearch<Bar>:echo<CR>
 
 " Reopen previously opened file (move back and forth between two files)
-nnoremap <Leader><Leader> :e#<CR>
+nnoremap <leader><leader> :e#<CR>
 
 " Show matching parenthesis
 set showmatch
 
 " Vim Plugins config
-noremap <Leader>r :CommandTFlush<CR>
+noremap <leader>r :CommandTFlush<CR>
 set wildignore+=*.log,*.sql,*.cache
 
 " Don't need to show status b/c we are using lightline
 set noshowmode
 set laststatus=2
+" NerdTree stuff
+let NERDTreeMapActiveMode='<right>'
+let NERDTreeShowHidden=1
+let NERDTreeInore=['\.DS_Store', '\~$', '\.swp']
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>j :NERDTreeFind<CR>
+autocmd VimEnter * NERDTree
+autocmd VImEnter * wincmd p
+
+" GitGutter
+set signcolumn=yes
