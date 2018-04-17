@@ -52,3 +52,8 @@ export NVM_DIR="$HOME/.nvm"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias ls="ls -Gla"
+
+# Docker
+alias dstop="docker stop $(docker ps -aq)"
+alias drmc="docker rm $(docker ps -aq)"
+alias drmi="docker rmi $(docker images -q)"
