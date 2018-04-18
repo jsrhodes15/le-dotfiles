@@ -54,6 +54,16 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 alias ls="ls -Gla"
 
 # Docker
-alias dstop="docker stop $(docker ps -aq)"
-alias drmc="docker rm $(docker ps -aq)"
-alias drmi="docker rmi $(docker images -q)"
+# Sbow all aliases related to Docker
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+
+alias dps="docker ps"
+alias dpa="docker ps -a"
+alias di="docker images"
+# Stop all containers
+dstop() { docker rm $(docker ps -aq); }
+# Remove all containers
+drmi() { docker rmi $(docker images -q); }
+# Bash into running container
+dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
+
