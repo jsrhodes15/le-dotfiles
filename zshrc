@@ -45,6 +45,7 @@ COMPLETION_WAITING_DOTS="true"
 # Disable marking untracked files as 'dirty' in git
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # plugins=(git)
 
@@ -52,9 +53,21 @@ source $ZSH/oh-my-zsh.sh
 
 ##### User configuration #####
 
-# This loads NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+# Defer initialization of nvm until nvm, node or a node-dependent command is
+# run. Ensure this block is only run once if .bashrc gets sourced multiple times
+# by checking whether __init_nvm is a function.
+if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(type -w __init_nvm)" = function ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+  declare -a __node_commands=('nvm' 'node' 'npm' 'yarn' 'eslint', 'webpack')
+  function __init_nvm() {
+    for i in "${__node_commands[@]}"; do unalias $i; done
+    . "$NVM_DIR"/nvm.sh
+    unset __node_commands
+    unset -f __init_nvm
+  }
+  for i in "${__node_commands[@]}"; do alias $i='__init_nvm && '$i; done
+fi
 
 # This loads RBENV
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -77,7 +90,6 @@ export NVM_DIR="$HOME/.nvm"
 # ------------------------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------------------------
-alias rm='trash-put'
 alias zshconfig='vim ~/.zshrc'
 alias ohmyzsh='vim ~/.oh-my-zsh'
 alias ls="ls -Gla"
@@ -87,6 +99,18 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
+# Update OSx software, brew, npm and packages
+alias update='echo "update osx: "; sudo softwareupdate -i -a; echo "update homebrew: "; brew update; echo "upgrade brew stuff: "; brew upgrade; echo "cleanup homebrew: "; brew cleanup; echo "update npm: ";  npm update npm -g; echo "update global npm modules: "; npm update -g'
+# Empty the Trash & clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+# Merge PDF files
+# Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
+alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
+# Copy my public SSH key to clipboard
+alias cpk='cat ~/.ssh/id_rsa.pub | pbcopy; echo "Public key copied to clipboard"'
+# Create UUID's
+alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
+
 # Docker
 # Sbow all aliases related to Docker
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
@@ -94,14 +118,14 @@ dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/[
 # Images
 alias di='docker images'
 alias drmi='docker rmi'
-alias drmi_all='docker rmi $* $(docker images -a -q)'
+alias drmiall='docker rmi $* $(docker images -a -q)'
 alias drmi_d='docker rmi $* $(docker images -q -f "dangling=true")'
 
 # Containters
 alias dps='docker ps'
 alias dpsa='docker ps -a'
 alias drm='docker rm'
-alias drm_all='docker rm $* $(docker ps -a -q)'
+alias dkillall='docker rm $* $(docker ps -a -q)'
 alias dstop='docker stop $* $(docker ps -q -f "status=running")'
 # Volumes
 alias dvls='docker volume ls $*'
