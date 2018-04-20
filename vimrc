@@ -1,3 +1,4 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 filetype plugin on
@@ -74,13 +75,22 @@ set laststatus=2
 " NerdTree stuff
 let NERDTreeMapActiveMode='<right>'
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
-" autocmd VimEnter * NERDTree
-" autocmd VImEnter * wincmd p
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+map <C-e> :NERDTreeTabsToggle<CR>:NERDTreeMirrorOpen<CR>
+map <leader>e :NERDTreeFind<CR>
+let NERDTreeShowBookmarks=1
+let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '.DS_Store']
+let NERDTreeChDirMode=0
+let NERDTreeQuitOnOpen=0
+let NERDTreeMouseMode=2
+let NERDTreeKeepTreeInNewTab=1
+let g:nerdtree_tabs_open_on_console_startup=1
+"close vim if only nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " GitGutter
 set signcolumn=yes

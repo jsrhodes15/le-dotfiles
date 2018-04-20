@@ -59,7 +59,7 @@ source $ZSH/oh-my-zsh.sh
 if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(type -w __init_nvm)" = function ]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-  declare -a __node_commands=('nvm' 'node' 'npm' 'yarn' 'eslint', 'webpack')
+  declare -a __node_commands=('nvm' 'node' 'npm' 'yarn' 'eslint' 'webpack')
   function __init_nvm() {
     for i in "${__node_commands[@]}"; do unalias $i; done
     . "$NVM_DIR"/nvm.sh
@@ -92,41 +92,9 @@ fi
 # ------------------------------------------------------------------------------
 alias zshconfig='vim ~/.zshrc'
 alias ohmyzsh='vim ~/.oh-my-zsh'
-alias ls="ls -Gla"
+source ~/.zsh_aliases
 
-# Colorize grep output
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-
-# Update OSx software, brew, npm and packages
-alias update='echo "update osx: "; sudo softwareupdate -i -a; echo "update homebrew: "; brew update; echo "upgrade brew stuff: "; brew upgrade; echo "cleanup homebrew: "; brew cleanup; echo "update npm: ";  npm update npm -g; echo "update global npm modules: "; npm update -g'
-# Empty the Trash & clear Apple’s System Logs to improve shell startup speed
-alias emptytrash="sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
-# Merge PDF files
-# Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
-alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
-# Copy my public SSH key to clipboard
-alias cpk='cat ~/.ssh/id_rsa.pub | pbcopy; echo "Public key copied to clipboard"'
-# Create UUID's
-alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
-
-# Docker
-# Sbow all aliases related to Docker
-dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
-
-# Images
-alias di='docker images'
-alias drmi='docker rmi'
-alias drmiall='docker rmi $* $(docker images -a -q)'
-alias drmi_d='docker rmi $* $(docker images -q -f "dangling=true")'
-
-# Containters
-alias dps='docker ps'
-alias dpsa='docker ps -a'
-alias drm='docker rm'
-alias dkillall='docker rm $* $(docker ps -a -q)'
-alias dstop='docker stop $* $(docker ps -q -f "status=running")'
-# Volumes
-alias dvls='docker volume ls $*'
-
+# extend history size
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000

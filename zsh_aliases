@@ -1,0 +1,36 @@
+# Perferred behavior for ls
+alias ls="ls -Gla"
+# Colorize grep output
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+# Update OSx software, brew, npm and packages
+alias update='echo "update osx: "; sudo softwareupdate -i -a; echo "Updating homebrew: "; brew update; echo "Upgrading brew: "; brew upgrade; echo "Cleaning up homebrew: "; brew cleanup;'
+# Empty the Trash & clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+# Merge PDF files
+# Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
+alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
+# Copy my public SSH key to clipboard
+alias cpk='cat ~/.ssh/id_rsa.pub | pbcopy; echo "Public key copied to clipboard"'
+# Create UUID's
+alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
+
+# Docker
+# Sbow all aliases related to Docker
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+
+# Images
+alias di='docker images'
+alias drmi='docker rmi'
+alias drmiall='docker rmi $* $(docker images -a -q)'
+alias drmi_d='docker rmi $* $(docker images -q -f "dangling=true")'
+
+# Containters
+alias dps='docker ps'
+alias dpsa='docker ps -a'
+alias drm='docker rm'
+alias dkillall='docker rm $* $(docker ps -a -q)'
+alias dstop='docker stop $* $(docker ps -q -f "status=running")'
+# Volumes
+alias dvls='docker volume ls $*'
