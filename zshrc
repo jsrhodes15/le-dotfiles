@@ -59,7 +59,7 @@ source $ZSH/oh-my-zsh.sh
 if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(type -w __init_nvm)" = function ]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-  declare -a __node_commands=('nvm' 'node' 'npm' 'yarn' 'eslint' 'webpack')
+  declare -a __node_commands=('nvm' 'node' 'npm' 'npx' 'yarn' 'eslint' 'webpack')
   function __init_nvm() {
     for i in "${__node_commands[@]}"; do unalias $i; done
     . "$NVM_DIR"/nvm.sh
