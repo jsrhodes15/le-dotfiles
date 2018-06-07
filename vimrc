@@ -119,3 +119,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " ========== GitGutter ==========
 set signcolumn=yes
+
+" ========== Syntax Highlighting
+let g:javascript_plugin_jsdoc = 1
+
+
