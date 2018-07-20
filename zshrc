@@ -92,6 +92,7 @@ fi
 # ------------------------------------------------------------------------------
 alias zshconfig='vim ~/.zshrc'
 alias ohmyzsh='vim ~/.oh-my-zsh'
+alias tmux='TERM=screen-256color-bce tmux -u'
 source ~/.zsh_aliases
 
 # extend history size

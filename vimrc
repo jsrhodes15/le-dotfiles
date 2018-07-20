@@ -1,7 +1,6 @@
 " Sourced from all over github. Still figuring out what a lot of these do
 " Use Vim settings rather than Vi ( supposedly much better :) )
 set nocompatible
-
 " default help to fullscreen (for now)
 cnoremap help tab help
 
@@ -12,12 +11,19 @@ call pathogen#helptags()
 
 " ========================= General Config ===========================
 set number                  "line numbers
+set mouse=a                 "mouse support
+set ttymouse=xterm2         "mouse codes support
 set history=100             "store :cmd history
 set hidden                  "hide and preserve files when opening new one
 set nobackup
 set noswapfile
 set visualbell
 set noerrorbells
+
+
+" Performance - Don't do syntax hl parsing for super long lines
+set synmaxcol=200
+
 syntax on                   "turn on syntax highlighting
 
 "remap leader key to 'comma'
@@ -81,6 +87,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 " Highlight found words when running search
 set hlsearch
 
+" Hide .DS_Store and .git directories from Vim
+let g:netrw_list_hide='.DS_Store,^\.git/$'
+
 " Use arrow keys (because why not?)
 map <D-A-RIGHT> <C-w>l
 map <D-A-LEFT> <C-w>h
@@ -111,7 +120,7 @@ map <leader>f :NERDTreeToggle<CR>
 map <leader>v :NERDTreeFind<CR>
 nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '.DS_Store', '.idea']
+let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '.DS_Store', '.idea']
 let NERDTreeQuitOnOpen=1
 let NERTTreeMinimalUI=1
 "close vim if only nerdtree
