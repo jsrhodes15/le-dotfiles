@@ -73,8 +73,8 @@ fi
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Stuff for Go
-export GOPATH = $HOME/Developer/go
-export PATH = $PATH:$GOPATH/bin
+export GOPATH=$HOME/Developer/go
+export PATH=$PATH:$GOPATH/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
