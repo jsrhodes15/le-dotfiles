@@ -111,7 +111,7 @@ map <leader>f :NERDTreeToggle<CR>
 map <leader>v :NERDTreeFind<CR>
 nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '.DS_Store', '.idea']
+let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '.DS_Store', '.idea']
 let NERDTreeQuitOnOpen=1
 let NERTTreeMinimalUI=1
 "close vim if only nerdtree

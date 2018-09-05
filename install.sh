@@ -6,4 +6,4 @@ if [[ -d "$ZSH" ]]; then
 fi
 
 # Symlink dotfiles
-./make_symlinks.sh
+./symlinks.sh
