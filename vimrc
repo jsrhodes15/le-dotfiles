@@ -60,15 +60,17 @@ endif
 "
 " Lightline config (needs to come before colorscheme)
 let g:lightline = {
-      \ 'colorscheme': 'one',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'fugitive#statusline'
-      \},
-      \}
+     \  'colorscheme': 'one',
+     \  'active': {
+     \    'left': [
+     \      [ 'mode', 'paste' ],
+     \      [ 'gitbranch', 'readonly', 'filename', 'modified' ]
+     \    ]
+     \  },
+     \  'component_function': {
+     \    'gitbranch': 'fugitive#statusline'
+     \  },
+     \}
 
 colorscheme onedark
 set guifont=Menlo\ Regular:h14
