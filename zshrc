@@ -31,6 +31,8 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 SPACESHIP_BATTERY_THRESHOLD=20
+
+#SPACESHIP_DIR_TRUNC_REPO=false
 # ------------------------------------------------------------------------------
 
 # Enable auto-setting terminal title.
@@ -68,9 +70,6 @@ if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(type -w __init_nvm)" = function ]; then
   }
   for i in "${__node_commands[@]}"; do alias $i='__init_nvm && '$i; done
 fi
-
-# This loads RBENV
-# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Stuff for Go
 export GOPATH=$HOME/Developer/go
