@@ -25,7 +25,7 @@ alias di='docker images'
 alias drmi='docker rmi'
 alias drmiall='docker rmi $* $(docker images -a -q)'
 alias drmi_d='docker rmi $* $(docker images -q -f "dangling=true")'
-
+alias dpretty='docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Image}}''
 # Containters
 alias dps='docker ps'
 alias dpsa='docker ps -a'
