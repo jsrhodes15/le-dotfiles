@@ -14,13 +14,10 @@ SPACESHIP_PROMPT_ORDER=(
   git           # Git section (git_branch + git_status)
   package       # Package version
   node          # Node.js section
+  ruby          # Ruby section
   golang        # Go section
-  rust          # Rust section
-  haskell       # Haskell Stack section
-  docker        # Docker section
-  aws           # Amazon Web Services section
-  pyenv         # Pyenv section
   dotnet        # .NET section
+  docker        # Docker section
   kubecontext   # Kubectl context section
   exec_time     # Execution time
   line_sep      # Line break
@@ -103,4 +100,4 @@ HISTSIZE=100000
 SAVEHIST=100000
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+#export PATH="$PATH:$HOME/.rvm/bin"
