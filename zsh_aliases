@@ -17,15 +17,16 @@ alias cpk='cat ~/.ssh/id_rsa.pub | pbcopy; echo "Public key copied to clipboard"
 alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
 
 # Docker
-# Sbow all aliases related to Docker
+# Show all aliases related to Docker
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
-
+# Formatting for docker ps output.
+dpretty() { docker ps -a --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.ID}}' }
 # Images
 alias di='docker images'
 alias drmi='docker rmi'
 alias drmiall='docker rmi $* $(docker images -a -q)'
 alias drmi_d='docker rmi $* $(docker images -q -f "dangling=true")'
-alias dpretty='docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Image}}''
+# alias dpretty='docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Image}}''
 # Containters
 alias dps='docker ps'
 alias dpsa='docker ps -a'
