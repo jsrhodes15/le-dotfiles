@@ -13,3 +13,7 @@ npm-debug.log
 # General
 log/
 *.log
+
+# seed data for Property Registry
+SampleData/
+
