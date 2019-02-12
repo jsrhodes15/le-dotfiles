@@ -35,3 +35,6 @@ alias dkillall='docker rm $* $(docker ps -a -q)'
 alias dstop='docker stop $* $(docker ps -q -f "status=running")'
 # Volumes
 alias dvls='docker volume ls $*'
+
+#Homebrew
+alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
