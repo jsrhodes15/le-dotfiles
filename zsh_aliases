@@ -38,3 +38,6 @@ alias dvls='docker volume ls $*'
 
 #Homebrew
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
+
+#Init 'thefuck'
+eval $(thefuck --alias)
