@@ -1,6 +1,11 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/$USER/.oh-my-zsh
 
+# Autocomplete for Homebrew commands
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
 # Set name of the theme to load.
 ZSH_THEME="spaceship"
 
