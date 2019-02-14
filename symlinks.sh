@@ -32,3 +32,9 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+# TODO figure out a way to reuse above logic, without prepending a "." to the Brewfile (silly rubyists)
+echo "Moving Brewfile from ~ to $olddir"
+mv ~/Brewfile ~/$olddir/Brewfile
+echo "Creating symlink to Brewfile in home directory."
+ln -s $dir/Brewfile ~/Brewfile
