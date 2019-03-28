@@ -28,3 +28,6 @@
 [submodule "vim/bundle/onedark.vim"]
 	path = vim/bundle/onedark.vim
 	url = git@github.com:joshdick/onedark.vim.git
+[submodule "vim/bundle/Brewfile.vim"]
+	path = vim/bundle/Brewfile.vim
+	url = https://github.com/bfontaine/Brewfile.vim.git
