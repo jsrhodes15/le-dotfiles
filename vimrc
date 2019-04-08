@@ -96,10 +96,21 @@ nnoremap <leader><leader> :e#<CR>
 set showmatch
 
 " ======================== Vim Plugins config =======================
-" ========== Command-t ==========
-noremap <leader>r :CommandTFlush<CR>
-set wildignore+=*.log,*.sql,*.cache
+" ==========  ripgrep  ==========
+if executable('ripgrep')
+  let g:ackprg="ripgrep -l"
+endif
 
+" ==========  ctrl+p   ==========
+" ignoring some things in ctrl+p
+set wildignore+=*.pyc,*venv/*,*node_modules,.git
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+" tells ctrl+p which root directory setting to use
+let g:ctrlp_working_path_mode = 'ra'
+" clear ctrl+p cache
+nnoremap FF :CtrlPClearCache <CR>
+" set max # of files to infinite
+let g:ctrlp_max_files = 0
 " ========== Lightline ==========
 " Don't need to show status b/c we are using lightline
 set noshowmode
