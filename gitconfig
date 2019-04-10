@@ -19,3 +19,5 @@
 	excludesfile = ~/.gitignore
 [pull]
 	rebase = true
+[status]
+  submoduleSummary = true
