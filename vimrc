@@ -136,4 +136,6 @@ set signcolumn=yes
 " ========== Syntax Highlighting
 let g:javascript_plugin_jsdoc = 1
 
-
+" ========== yaml things
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab

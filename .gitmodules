@@ -34,3 +34,6 @@
 [submodule "vim/bundle/ctrlp.vim"]
 	path = vim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "vim/bundle/yaml-vim.git"]
+	path = vim/bundle/yaml-vim.git
+	url = git@github.com:mrk21/yaml-vim.git

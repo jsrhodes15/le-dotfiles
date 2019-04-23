@@ -39,5 +39,8 @@ alias dvls='docker volume ls $*'
 #Homebrew
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 
+#Tmux with colors
+alias tmux='TERM=screen-256color-bce tmux'
+
 #Init 'thefuck'
 eval $(thefuck --alias)
