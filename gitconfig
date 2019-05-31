@@ -20,4 +20,4 @@
 [pull]
 	rebase = true
 [status]
-  submoduleSummary = true
+  submoduleSummary = false
