@@ -32,6 +32,8 @@ brew "go"
 brew "htop"
 # Add GitHub support to git on the command-line
 brew "hub"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # X.509 and CMS library
 brew "libksba"
 # Generic library support script
@@ -72,6 +74,7 @@ cask "aerial"
 cask "docker"
 cask "firefox"
 cask "google-chrome"
+cask "google-cloud-sdk"
 cask "iterm2"
 cask "plex-media-server"
 cask "postman"
