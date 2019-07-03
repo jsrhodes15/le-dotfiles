@@ -66,6 +66,10 @@ brew "tree"
 brew "yarn"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # Fast and simple Node.js version manager

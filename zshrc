@@ -44,10 +44,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 #Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 plugins=(
+  git
   docker
   docker-compose
-  zsh-autosuggestions
-  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -86,7 +85,8 @@ eval "`fnm env --multi`"
 alias zshconfig='vim ~/.zshrc'
 alias ohmyzsh='vim ~/.oh-my-zsh'
 source ~/.zsh_aliases
-
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # extend history size
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
