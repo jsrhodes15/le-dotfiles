@@ -36,6 +36,9 @@ alias dstop='docker stop $* $(docker ps -q -f "status=running")'
 # Volumes
 alias dvls='docker volume ls $*'
 
+# Kubernetes
+alias k='kubectl'
+
 #Homebrew
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 

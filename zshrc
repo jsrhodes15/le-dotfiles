@@ -46,7 +46,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
   git
   docker
-  docker-compose
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
