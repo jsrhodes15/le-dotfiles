@@ -34,6 +34,8 @@ brew "htop"
 brew "hub"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# The Kubernetes package manager
+brew "kubernetes-helm"
 # X.509 and CMS library
 brew "libksba"
 # Generic library support script
@@ -62,6 +64,8 @@ brew "thefuck"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Command-line unarchiving tools supporting multiple formats
+brew "unar"
 # JavaScript package manager
 brew "yarn"
 # UNIX shell (command interpreter)
@@ -84,6 +88,7 @@ cask "plex-media-server"
 cask "postman"
 cask "robo-3t"
 cask "slack"
+cask "virtualbox"
 cask "visual-studio-code"
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
