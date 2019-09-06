@@ -92,3 +92,4 @@ HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 
+export PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
