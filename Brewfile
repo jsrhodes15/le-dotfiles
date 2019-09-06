@@ -3,6 +3,7 @@ tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "mongodb/brew"
 tap "schniz/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
@@ -46,14 +47,14 @@ brew "libyaml"
 brew "macvim", args: ["HEAD"]
 # Mac App Store command-line interface
 brew "mas"
-# High-performance, schema-free, document-oriented database
-brew "mongodb"
-# Port scanning utility for large networks
-brew "nmap"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
+# Port scanning utility for large networks
+brew "nmap"
 # Manage compile and link flags for libraries
 brew "pkg-config"
+# Interpreted, interactive, object-oriented programming language
+brew "python@2"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Command-line interface for https://speedtest.net bandwidth tests
@@ -76,6 +77,8 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+# High-performance, schema-free, document-oriented database
+brew "mongodb/brew/mongodb-community@3.6"
 # Fast and simple Node.js version manager
 brew "schniz/tap/fnm"
 cask "aerial"
@@ -89,6 +92,7 @@ cask "postman"
 cask "robo-3t"
 cask "slack"
 cask "virtualbox"
+cask "virtualbox-extension-pack"
 cask "visual-studio-code"
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
