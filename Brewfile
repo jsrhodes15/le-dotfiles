@@ -13,38 +13,44 @@ brew "autoconf"
 brew "automake"
 # SSL/TLS cryptography library
 brew "openssl"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Library for command-line editing
 brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
+# Interpreted, interactive, object-oriented programming language
+brew "python"
 # Integrated shell for working with the AWS CLI
 brew "aws-shell"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Control the macOS dark mode from the command-line
+brew "dark-mode"
 # Distributed revision control system
 brew "git"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# The Kubernetes package manager
+brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
 # Add GitHub support to git on the command-line
 brew "hub"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# The Kubernetes package manager
-brew "kubernetes-helm"
+# Asynchronous event library
+brew "libevent"
 # X.509 and CMS library
 brew "libksba"
 # Generic library support script
 brew "libtool"
 # YAML Parser
 brew "libyaml"
-# GUI for vim, made for macOS
-brew "macvim", args: ["HEAD"]
 # Mac App Store command-line interface
 brew "mas"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Port scanning utility for large networks
 brew "nmap"
 # Manage compile and link flags for libraries
@@ -57,6 +63,8 @@ brew "ripgrep"
 brew "speedtest-cli"
 # Programatically correct mistyped console commands
 brew "thefuck"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Command-line unarchiving tools supporting multiple formats
@@ -79,10 +87,15 @@ cask "aerial"
 cask "docker"
 cask "firefox"
 cask "google-chrome"
+cask "google-cloud-sdk"
 cask "iterm2"
+cask "plex-media-server"
 cask "postman"
 cask "robo-3t"
 cask "slack"
 cask "virtualbox"
 cask "virtualbox-extension-pack"
 cask "visual-studio-code"
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Trello", id: 1278508951
