@@ -23,12 +23,8 @@ brew "aws-shell"
 brew "bat"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# Control the macOS dark mode from the command-line
-brew "dark-mode"
 # Distributed revision control system
 brew "git"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
 # Improved top (interactive process viewer)
 brew "htop"
 # Add GitHub support to git on the command-line
@@ -61,8 +57,6 @@ brew "ripgrep"
 brew "speedtest-cli"
 # Programatically correct mistyped console commands
 brew "thefuck"
-# Terminal multiplexer
-brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Command-line unarchiving tools supporting multiple formats
@@ -85,17 +79,10 @@ cask "aerial"
 cask "docker"
 cask "firefox"
 cask "google-chrome"
-cask "google-cloud-sdk"
 cask "iterm2"
-cask "plex-media-server"
 cask "postman"
 cask "robo-3t"
 cask "slack"
 cask "virtualbox"
 cask "virtualbox-extension-pack"
 cask "visual-studio-code"
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541

@@ -2,35 +2,7 @@
 export ZSH=/Users/$USER/.oh-my-zsh
 
 # Set name of the theme to load.
-ZSH_THEME="spaceship"
-
-# ------------------------------------------------------------------------------
-# Spaceship Customization
-# ------------------------------------------------------------------------------
-SPACESHIP_PROMPT_ORDER=(
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-  package       # Package version
-  node          # Node.js section
-  ruby          # Ruby section
-  golang        # Go section
-  dotnet        # .NET section
-  docker        # Docker section
-  kubecontext   # Kubectl context section
-  exec_time     # Execution time
-  line_sep      # Line break
-  battery       # Battery level and status
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
-
-SPACESHIP_BATTERY_THRESHOLD=20
-
-#SPACESHIP_DIR_TRUNC_REPO=false
-# ------------------------------------------------------------------------------
+ZSH_THEME="random"
 
 # Enable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -42,20 +14,21 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 
-#Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 plugins=(
   git
   docker
-  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
 
-##### User configuration #####
+# ------------------------------------------------------------------------------
+# User configuration
+# ------------------------------------------------------------------------------
 
 # Stuff for Go
-export GOPATH=$HOME/Developer/go
-export PATH=$PATH:$GOPATH/bin
+#export GOPATH=$HOME/Developer/go
+#export PATH=$PATH:$GOPATH/bin
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 #export PATH="$PATH:$HOME/.rvm/bin"
@@ -63,6 +36,25 @@ export PATH=$PATH:$GOPATH/bin
 # fnm - node version manager
 export PATH=$HOME/.fnm:$PATH
 eval "`fnm env --multi`"
+
+# ------------------------------------------------------------------------------
+# Aliases
+# ------------------------------------------------------------------------------
+alias zshconfig='vim ~/.zshrc'
+alias ohmyzsh='vim ~/.oh-my-zsh'
+source ~/.zsh_aliases
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# extend history size
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+
+export PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
+
+# ------------------------------------------------------------------------------
+# Unused configurations
+# ------------------------------------------------------------------------------
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -80,16 +72,29 @@ eval "`fnm env --multi`"
 # export SSH_KEY_PATH="~/.ssh/dsh_id"
 
 # ------------------------------------------------------------------------------
-# Aliases
+# Spaceship Customization
 # ------------------------------------------------------------------------------
-alias zshconfig='vim ~/.zshrc'
-alias ohmyzsh='vim ~/.oh-my-zsh'
-source ~/.zsh_aliases
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# extend history size
-HISTFILE=~/.zsh_history
-HISTSIZE=100000
-SAVEHIST=100000
-
-export PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
+#SPACESHIP_PROMPT_ORDER=(
+#  user          # Username section
+#  dir           # Current directory section
+#  host          # Hostname section
+#  git           # Git section (git_branch + git_status)
+#  package       # Package version
+#  node          # Node.js section
+#  ruby          # Ruby section
+#  golang        # Go section
+#  dotnet        # .NET section
+#  docker        # Docker section
+#  kubecontext   # Kubectl context section
+#  exec_time     # Execution time
+#  line_sep      # Line break
+#  battery       # Battery level and status
+#  jobs          # Background jobs indicator
+#  exit_code     # Exit code section
+#  char          # Prompt character
+#)
+#
+#SPACESHIP_BATTERY_THRESHOLD=20
+#
+#SPACESHIP_DIR_TRUNC_REPO=false
+# ------------------------------------------------------------------------------
