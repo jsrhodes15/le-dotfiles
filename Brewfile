@@ -31,8 +31,6 @@ brew "coreutils"
 brew "dark-mode"
 # Distributed revision control system
 brew "git"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
 # The Kubernetes package manager
 brew "helm"
 # Improved top (interactive process viewer)
@@ -64,8 +62,6 @@ brew "speedtest-cli"
 # Programatically correct mistyped console commands
 brew "thefuck"
 # Terminal multiplexer
-brew "tmux"
-# Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
@@ -83,19 +79,14 @@ brew "heroku/brew/heroku"
 brew "mongodb/brew/mongodb-community@3.6"
 # Fast and simple Node.js version manager
 brew "schniz/tap/fnm"
-cask "aerial"
 cask "docker"
 cask "firefox"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "iterm2"
-cask "plex-media-server"
 cask "postman"
 cask "robo-3t"
 cask "slack"
 cask "virtualbox"
 cask "virtualbox-extension-pack"
 cask "visual-studio-code"
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Trello", id: 1278508951
