@@ -11,7 +11,7 @@ dir=~/dotfiles
 # old dotfiles backup directory
 olddir=~/dotfiles_old
 # include all config files that you want to be used here
-files="vimrc gitconfig gitignore zsh_aliases zshrc"
+files="gitconfig gitignore zsh_aliases zshrc"
 
 ##########
 
