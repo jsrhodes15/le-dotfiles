@@ -52,7 +52,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 ##### User configuration #####
-
+# Untracked file for storing creds - this will need to be manually created
+source ~/.zsh_secrets
 # Stuff for Go
 export GOPATH=$HOME/Developer/go
 export PATH=$PATH:$GOPATH/bin
