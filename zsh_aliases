@@ -15,6 +15,9 @@ alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Re
 alias cpk='cat ~/.ssh/id_rsa.pub | pbcopy; echo "Public key copied to clipboard"'
 # Create UUID's
 alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
 
 # Docker
 # Show all aliases related to Docker
