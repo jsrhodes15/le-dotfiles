@@ -1,6 +1,7 @@
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "mongodb/brew"
 tap "schniz/tap"
@@ -10,8 +11,8 @@ brew "ack"
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# SSL/TLS cryptography library
-brew "openssl"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Library for command-line editing
 brew "readline"
 # Command-line interface for SQLite
@@ -26,28 +27,24 @@ brew "coreutils"
 brew "dark-mode"
 # Distributed revision control system
 brew "git"
+# Alternative to top/htop
+brew "glances"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Improved top (interactive process viewer)
-brew "htop"
+# The Kubernetes package manager
+brew "helm"
 # Add GitHub support to git on the command-line
 brew "hub"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# The Kubernetes package manager
-brew "kubernetes-helm"
 # X.509 and CMS library
 brew "libksba"
 # Generic library support script
 brew "libtool"
 # YAML Parser
 brew "libyaml"
-# GUI for vim, made for macOS
-brew "macvim", args: ["HEAD"]
 # Mac App Store command-line interface
 brew "mas"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Port scanning utility for large networks
 brew "nmap"
 # Manage compile and link flags for libraries
@@ -83,6 +80,7 @@ brew "schniz/tap/fnm"
 cask "aerial"
 cask "docker"
 cask "firefox"
+cask "firefox-developer-edition"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "iterm2"
@@ -90,6 +88,4 @@ cask "plex-media-server"
 cask "postman"
 cask "robo-3t"
 cask "slack"
-cask "virtualbox"
-cask "virtualbox-extension-pack"
 cask "visual-studio-code"
