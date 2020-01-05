@@ -2,32 +2,32 @@
 export ZSH=/Users/$USER/.oh-my-zsh
 
 # Set name of the theme to load.
-ZSH_THEME="spaceship"
+#ZSH_THEME="spaceship"
 
 # ------------------------------------------------------------------------------
 # Spaceship Customization
 # ------------------------------------------------------------------------------
-SPACESHIP_PROMPT_ORDER=(
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-  package       # Package version
-  node          # Node.js section
-  ruby          # Ruby section
-  golang        # Go section
-  dotnet        # .NET section
-  docker        # Docker section
-  kubecontext   # Kubectl context section
-  exec_time     # Execution time
-  line_sep      # Line break
-  battery       # Battery level and status
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
+#SPACESHIP_PROMPT_ORDER=(
+#  user          # Username section
+#  dir           # Current directory section
+#  host          # Hostname section
+#  git           # Git section (git_branch + git_status)
+#  package       # Package version
+#  node          # Node.js section
+#  ruby          # Ruby section
+#  golang        # Go section
+#  dotnet        # .NET section
+#  docker        # Docker section
+#  kubecontext   # Kubectl context section
+#  exec_time     # Execution time
+#  line_sep      # Line break
+#  battery       # Battery level and status
+#  jobs          # Background jobs indicator
+#  exit_code     # Exit code section
+#  char          # Prompt character
+#)
 
-SPACESHIP_BATTERY_THRESHOLD=20
+#SPACESHIP_BATTERY_THRESHOLD=20
 
 #SPACESHIP_DIR_TRUNC_REPO=false
 # ------------------------------------------------------------------------------
@@ -94,3 +94,5 @@ HISTSIZE=100000
 SAVEHIST=100000
 
 export PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
+
+eval "$(starship init zsh)"

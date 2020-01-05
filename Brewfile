@@ -55,6 +55,8 @@ brew "python@2"
 brew "ripgrep"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# The cross-shell prompt for astronauts
+brew "starship"
 # Programatically correct mistyped console commands
 brew "thefuck"
 # Terminal multiplexer
@@ -63,6 +65,8 @@ brew "tmux"
 brew "tree"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
+# Watch files and take action when they change
+brew "watchman"
 # JavaScript package manager
 brew "yarn"
 # UNIX shell (command interpreter)
@@ -77,6 +81,7 @@ brew "heroku/brew/heroku"
 brew "mongodb/brew/mongodb-community@3.6"
 # Fast and simple Node.js version manager
 brew "schniz/tap/fnm"
+cask "adoptopenjdk8"
 cask "aerial"
 cask "docker"
 cask "firefox"
@@ -84,7 +89,6 @@ cask "firefox-developer-edition"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "iterm2"
-cask "plex-media-server"
 cask "postman"
 cask "robo-3t"
 cask "slack"
