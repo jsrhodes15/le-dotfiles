@@ -43,6 +43,7 @@ dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/[
 # Formatting for docker ps output.
 dpretty() { docker ps -a --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.ID}}' }
 # Images
+alias dc='docker-compose'
 alias di='docker images'
 alias drmi='docker rmi'
 alias drmiall='docker rmi $* $(docker images -a -q)'
