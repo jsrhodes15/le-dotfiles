@@ -2154,7 +2154,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>496 501 799 448 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 118 1689 979 0 0 1792 1097 </string>
+	<string>0 54 1689 1043 0 0 1792 1097 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3970,14 +3970,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1792, 1120}}</string>
 		<key>topLeft</key>
-		<string>{823, 760}</string>
+		<string>{434, 964}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>47A67475-2419-4DB6-BC11-1F89C57DF8A9</string>
 	<key>NoSyncLastTipTime</key>
-	<real>599871234.52843702</real>
+	<real>600811332.705881</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>19</integer>
+	<integer>25</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4722,21 +4722,30 @@
 	<real>596805492.50089395</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
-		<string>0004</string>
-		<string>0000</string>
 		<string>0010</string>
-		<string>0007</string>
-		<string>0003</string>
-		<string>0006</string>
-		<string>0002</string>
-		<string>000</string>
-		<string>0012</string>
+		<string>0015</string>
+		<string>0004</string>
 		<string>0009</string>
-		<string>0005</string>
-		<string>0001</string>
-		<string>0011</string>
-		<string>0008</string>
 		<string>0013</string>
+		<string>0002</string>
+		<string>0018</string>
+		<string>0007</string>
+		<string>0011</string>
+		<string>0000</string>
+		<string>0016</string>
+		<string>0005</string>
+		<string>0020</string>
+		<string>0014</string>
+		<string>0003</string>
+		<string>0019</string>
+		<string>0008</string>
+		<string>0012</string>
+		<string>0001</string>
+		<string>000</string>
+		<string>0017</string>
+		<string>0006</string>
+		<string>0021</string>
+		<string>0022</string>
 	</array>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
@@ -4792,7 +4801,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-05T20:38:52Z</date>
+	<date>2020-01-15T18:27:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
