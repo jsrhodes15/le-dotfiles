@@ -40,6 +40,10 @@ alias nuke="git clean -df && git reset --hard"
 # Docker
 # Show all aliases related to Docker
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+# Start and Stop (gracefully) Docker from CLI
+alias dopen='open --background -a Docker'
+dclose() { test -z "$(docker ps -q 2>/dev/null)" && osascript -e 'quit app "Docker"' }
+
 # Formatting for docker ps output.
 dpretty() { docker ps -a --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.ID}}' }
 # Images
