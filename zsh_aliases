@@ -71,5 +71,9 @@ alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 #Tmux with colors
 alias tmux='TERM=screen-256color-bce tmux'
 
+# Movement
+alias harmony='cd ~/Developer/harmony'
+
 #Init 'thefuck'
 eval $(thefuck --alias)
+
