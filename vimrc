@@ -18,6 +18,7 @@ set nobackup
 set noswapfile
 set visualbell
 set noerrorbells
+set mouse=a
 syntax on                   "turn on syntax highlighting
 
 "remap leader key to 'comma'
