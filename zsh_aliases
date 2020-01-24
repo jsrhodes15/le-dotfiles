@@ -62,6 +62,11 @@ alias dstop='docker stop $* $(docker ps -q -f "status=running")'
 # Volumes
 alias dvls='docker volume ls $*'
 
+killdocker() {
+  dkillall
+  docker system prune --volumes -f
+}
+
 # Kubernetes
 alias k='kubectl'
 
