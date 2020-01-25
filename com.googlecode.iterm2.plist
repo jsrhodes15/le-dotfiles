@@ -1966,7 +1966,7 @@
 	<key>Default Bookmark Guid</key>
 	<string>27EDE057-AC57-4A95-8D09-2CA9517A8FAA</string>
 	<key>DimOnlyText</key>
-	<true/>
+	<false/>
 	<key>EnableDivisionView</key>
 	<true/>
 	<key>GlobalKeyMap</key>
@@ -2154,7 +2154,9 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>496 501 799 448 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 54 1689 1043 0 0 1792 1097 </string>
+	<string>-1021 1120 1920 1057 -1021 1120 1920 1057 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>-795 1134 1689 1043 -1021 1120 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3975,9 +3977,9 @@
 	<key>NoSyncInstallationId</key>
 	<string>47A67475-2419-4DB6-BC11-1F89C57DF8A9</string>
 	<key>NoSyncLastTipTime</key>
-	<real>600811332.705881</real>
+	<real>601590782.24128699</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>25</integer>
+	<integer>32</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4723,29 +4725,35 @@
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>0010</string>
+		<string>0026</string>
 		<string>0015</string>
 		<string>0004</string>
 		<string>0009</string>
+		<string>0024</string>
 		<string>0013</string>
 		<string>0002</string>
 		<string>0018</string>
 		<string>0007</string>
+		<string>0022</string>
 		<string>0011</string>
 		<string>0000</string>
+		<string>0027</string>
 		<string>0016</string>
 		<string>0005</string>
 		<string>0020</string>
+		<string>0025</string>
 		<string>0014</string>
 		<string>0003</string>
 		<string>0019</string>
 		<string>0008</string>
+		<string>0023</string>
 		<string>0012</string>
 		<string>0001</string>
 		<string>000</string>
 		<string>0017</string>
 		<string>0006</string>
 		<string>0021</string>
-		<string>0022</string>
+		<string>0028</string>
 	</array>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
@@ -4801,7 +4809,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-15T18:27:26Z</date>
+	<date>2020-01-24T16:39:02Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
@@ -4811,7 +4819,7 @@
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.59999999999999998</real>
+	<real>0.14278867464539008</real>
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
 	<key>SuppressRestartAnnouncement</key>
