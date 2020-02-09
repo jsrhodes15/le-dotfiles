@@ -4,6 +4,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "johanhaleby/kubetail"
 tap "mongodb/brew"
 tap "schniz/tap"
 # Search tool like grep, but optimized for programmers
@@ -78,6 +79,8 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+# Tail logs from multiple Kubernetes pods at the same time
+brew "johanhaleby/kubetail/kubetail", args: ["with-short-names"]
 # High-performance, schema-free, document-oriented database
 brew "mongodb/brew/mongodb-community@3.6"
 # Fast and simple Node.js version manager
@@ -94,6 +97,7 @@ cask "google-cloud-sdk"
 cask "iterm2"
 cask "plex-media-server"
 cask "postman"
+cask "rectangle"
 cask "robo-3t"
 cask "slack"
 cask "visual-studio-code"
