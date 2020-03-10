@@ -27,6 +27,8 @@ brew "bat"
 brew "coreutils"
 # Control the macOS dark mode from the command-line
 brew "dark-mode"
+# Gatsby command-line interface
+brew "gatsby-cli"
 # Distributed revision control system
 brew "git"
 # Alternative to top/htop
@@ -100,4 +102,5 @@ cask "postman"
 cask "rectangle"
 cask "robo-3t"
 cask "slack"
+cask "udeler"
 cask "visual-studio-code"
