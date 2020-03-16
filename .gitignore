@@ -1,3 +1,4 @@
 .DS_Store
 .idea
+Brewfile.lock.json
 systemconfig.js
