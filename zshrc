@@ -86,6 +86,7 @@ eval "`fnm env --multi`"
 alias zshconfig='vim ~/.zshrc'
 alias ohmyzsh='vim ~/.oh-my-zsh'
 source ~/.zsh_aliases
+source ~/.zsh_secrets
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # extend history size

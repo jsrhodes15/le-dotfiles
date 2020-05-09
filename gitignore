@@ -16,4 +16,5 @@ log/
 
 # seed data for Property Registry
 SampleData/
-
+# secrets
+zsh_secrets
