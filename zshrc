@@ -95,5 +95,8 @@ HISTSIZE=100000
 SAVEHIST=100000
 
 export PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
+export HOWCHOO_DIR=/Users/jordanrhodes/Developer/howchoo/Howchoo-django  # Added by howchoo
+PATH=$PATH:$HOWCHOO_DIR/bin/commands  # Added by howchoo
+
 
 eval "$(starship init zsh)"
