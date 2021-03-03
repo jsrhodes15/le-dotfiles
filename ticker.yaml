@@ -1,0 +1,26 @@
+show-summary: true
+show-tags: true
+show-fundamentals: true
+show-separator: true
+show-holdings: true
+interval: 60
+currency: USD
+watchlist:
+  - AFRM
+  - HCI
+  - HYLN
+  - ZOM
+  - MDB
+lots:
+  - symbol: "AFRM"
+    quantity: 22.0
+    unit_cost: 99.59
+  - symbol: "HCI"
+    quantity: 35.0
+    unit_cost: 0.00
+  - symbol: "HYLN"
+    quantity: 16.0
+    unit_cost: 17.26
+  - symbol: "ZOM"
+    quantity: 85.0
+    unit_cost: 2.41

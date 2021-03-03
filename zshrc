@@ -65,6 +65,8 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$HOME/.fnm:$PATH
 eval "`fnm env --multi`"
 
+# gcloud - google cloud CLI
+export PATH=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Compilation flags
@@ -95,6 +97,9 @@ HISTSIZE=100000
 SAVEHIST=100000
 
 export PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
+# Exzeo stuff
+export DOCUMENT_REGISTRY=registry.exzeo.io/docker
+# Howchoo stuff
 export HOWCHOO_DIR=/Users/jordanrhodes/Developer/howchoo/Howchoo-django  # Added by howchoo
 PATH=$PATH:$HOWCHOO_DIR/bin/commands  # Added by howchoo
 

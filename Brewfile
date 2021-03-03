@@ -1,3 +1,4 @@
+tap "achannarasappa/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -33,6 +34,8 @@ brew "aws-shell"
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Control the macOS dark mode from the command-line
@@ -54,7 +57,7 @@ brew "hub"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Kubernetes command-line interface
-brew "kubernetes-cli", link: false
+brew "kubernetes-cli"
 # X.509 and CMS library
 brew "libksba"
 # Generic library support script
@@ -75,7 +78,7 @@ brew "ripgrep"
 brew "speedtest-cli"
 # Cross-shell prompt for astronauts
 brew "starship"
-# Programatically correct mistyped console commands
+# Programmatically correct mistyped console commands
 brew "thefuck"
 # Terminal multiplexer
 brew "tmux"
@@ -95,6 +98,8 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Terminal stock ticker with live updates and position tracking
+brew "achannarasappa/tap/ticker"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # Tail logs from multiple Kubernetes pods at the same time
@@ -103,27 +108,47 @@ brew "johanhaleby/kubetail/kubetail", args: ["with-short-names"]
 brew "k14s/tap/kapp"
 # YAML Templating Tool
 brew "k14s/tap/ytt"
+# An interactive JavaScript command-line interface to MongoDB
+brew "mongodb/brew/mongodb-community-shell"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
+# Prebuilt OpenJDK binaries
 cask "adoptopenjdk8"
 cask "aerial"
 cask "camtasia"
+# Voice and text chat software
 cask "discord"
+# App to build and share containerized applications and microservices
 cask "docker"
+# Web browser
 cask "firefox"
+# Web browser
 cask "firefox-developer-edition"
 cask "font-firacode-nerd-font"
 cask "font-firacode-nerd-font-mono"
+# Web browser
 cask "google-chrome"
+# Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Multi-platform web browser
 cask "microsoft-edge"
+# Home media server
 cask "plex-media-server"
+# Collaboration platform for API development
 cask "postman"
+# Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# MongoDB management tool
 cask "robo-3t"
+# Tool to format memory cards complying with the SD File System spec
 cask "sdformatter"
+# Team communication and collaboration software
 cask "slack"
+# Desktop application for downloading Udemy Courses
 cask "udeler"
+# Open-source code editor
 cask "visual-studio-code"
-mas "Xcode", id: 497799835
