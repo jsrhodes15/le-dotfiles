@@ -3,7 +3,7 @@ show-tags: true
 show-fundamentals: true
 show-separator: true
 show-holdings: true
-interval: 60
+interval: 15
 currency: USD
 watchlist:
   - AFRM
@@ -15,9 +15,6 @@ lots:
   - symbol: "AFRM"
     quantity: 22.0
     unit_cost: 99.59
-  - symbol: "HCI"
-    quantity: 35.0
-    unit_cost: 0.00
   - symbol: "HYLN"
     quantity: 16.0
     unit_cost: 17.26
