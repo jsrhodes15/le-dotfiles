@@ -98,7 +98,7 @@ SAVEHIST=100000
 
 export PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
 # Exzeo stuff
-export DOCUMENT_REGISTRY=registry.exzeo.io/docker
+export DOCKER_REGISTRY=registry.exzeo.io/docker
 # Howchoo stuff
 export HOWCHOO_DIR=/Users/jordanrhodes/Developer/howchoo/Howchoo-django  # Added by howchoo
 PATH=$PATH:$HOWCHOO_DIR/bin/commands  # Added by howchoo
