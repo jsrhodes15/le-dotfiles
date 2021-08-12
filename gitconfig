@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-	name = Jordan Rhodes
-	email = jsrhodes15@gmail.com
+#	name = Your Name
+#	email = yourworkemail
 [alias]
   up = "!git remote update -p; git merge --ff-only @{u}"
   conf  = config --global -e
@@ -21,3 +21,5 @@
 	rebase = true
 [status]
   submoduleSummary = false
+[init]
+	defaultBranch = main

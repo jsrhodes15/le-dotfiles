@@ -7,11 +7,11 @@
 ########## Variables
 
 # dotfiles directory
-dir=~/dotfiles
+dir=$(pwd)
 # old dotfiles backup directory
 olddir=~/dotfiles_old
-# list of files/folders to sylink in homedir
-files="vimrc vim gitconfig gitignore zshrc zsh_aliases zsh_secrets tmux.conf ticker.yaml"
+# list of files/folders to symlink in homedir
+files="gitconfig gitignore zshrc zsh_aliases"
 
 ##########
 
@@ -27,14 +27,18 @@ echo "...done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for file in $files; do
-    echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/.$file ~/$olddir/
-    echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+    if [ -f $file ]; then
+        echo "Moving any existing dotfiles from ~ to $olddir"
+        mv ~/.$file $olddir/
+        echo "Creating symlink to $file in home directory."
+        ln -s $dir/$file ~/.$file
+    else
+        echo "Skipping $file as it was not found."
+    fi
 done
 
 # TODO figure out a way to reuse above logic, without prepending a "." to the Brewfile (silly rubyists)
 echo "Moving Brewfile from ~ to $olddir"
-mv ~/Brewfile ~/$olddir/Brewfile
+mv ~/Brewfile $olddir/Brewfile
 echo "Creating symlink to Brewfile in home directory."
 ln -s $dir/Brewfile ~/Brewfile

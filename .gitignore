@@ -2,3 +2,4 @@
 .idea
 Brewfile.lock.json
 systemconfig.js
+zsh_secrets
