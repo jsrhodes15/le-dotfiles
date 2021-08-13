@@ -6,9 +6,9 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "johanhaleby/kubetail"
-tap "k14s/tap"
 tap "mongodb/brew"
 tap "schniz/tap"
+tap "vmware-tanzu/carvel"
 tap "weaveworks/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
@@ -40,6 +40,8 @@ brew "cocoapods"
 brew "coreutils"
 # Control the macOS dark mode from the command-line
 brew "dark-mode"
+# Secure runtime for JavaScript and TypeScript
+brew "deno"
 # Fast and simple Node.js version manager
 brew "fnm"
 # Gatsby command-line interface
@@ -90,8 +92,6 @@ brew "unar"
 brew "watch"
 # Watch files and take action when they change
 brew "watchman"
-# JavaScript package manager
-brew "yarn"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
@@ -104,17 +104,19 @@ brew "achannarasappa/tap/ticker"
 brew "heroku/brew/heroku"
 # Tail logs from multiple Kubernetes pods at the same time
 brew "johanhaleby/kubetail/kubetail", args: ["with-short-names"]
-# Kapp
-brew "k14s/tap/kapp"
-# YAML Templating Tool
-brew "k14s/tap/ytt"
 # An interactive JavaScript command-line interface to MongoDB
 brew "mongodb/brew/mongodb-community-shell"
+# Kapp
+brew "vmware-tanzu/carvel/kapp"
+# YAML Templating Tool
+brew "vmware-tanzu/carvel/ytt"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 # Prebuilt OpenJDK binaries
 cask "adoptopenjdk8"
+# Apple TV Aerial screensaver
 cask "aerial"
+# Screen recorder and video editor
 cask "camtasia"
 # Voice and text chat software
 cask "discord"
@@ -134,7 +136,7 @@ cask "google-cloud-sdk"
 cask "iterm2"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
-# Multi-platform web browser
+# Web browser
 cask "microsoft-edge"
 # Home media server
 cask "plex-media-server"
@@ -148,6 +150,8 @@ cask "robo-3t"
 cask "sdformatter"
 # Team communication and collaboration software
 cask "slack"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin8"
 # Desktop application for downloading Udemy Courses
 cask "udeler"
 # Open-source code editor
