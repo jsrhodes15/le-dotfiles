@@ -7,17 +7,13 @@ interval: 15
 currency: USD
 watchlist:
   - AFRM
+  - CGEN
   - HCI
-  - HYLN
-  - ZOM
   - MDB
 lots:
   - symbol: "AFRM"
-    quantity: 22.0
-    unit_cost: 99.59
-  - symbol: "HYLN"
-    quantity: 16.0
-    unit_cost: 17.26
-  - symbol: "ZOM"
-    quantity: 85.0
-    unit_cost: 2.41
+    quantity: 50
+    unit_cost: 75.47
+  - symbol: "CGEN"
+    quantity: 100
+    unit_cost: 8.44
