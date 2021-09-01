@@ -126,8 +126,8 @@ cask "docker"
 cask "firefox"
 # Web browser
 cask "firefox-developer-edition"
-cask "font-firacode-nerd-font"
-cask "font-firacode-nerd-font-mono"
+# Font
+cask "font-fira-code-nerd-font"
 # Web browser
 cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
