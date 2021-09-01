@@ -138,8 +138,6 @@ cask "iterm2"
 cask "microsoft-auto-update"
 # Web browser
 cask "microsoft-edge"
-# Home media server
-cask "plex-media-server"
 # Collaboration platform for API development
 cask "postman"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -152,7 +150,5 @@ cask "sdformatter"
 cask "slack"
 # JDK from the Eclipse Foundation (Adoptium)
 cask "temurin8"
-# Desktop application for downloading Udemy Courses
-cask "udeler"
 # Open-source code editor
 cask "visual-studio-code"
