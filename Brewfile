@@ -148,3 +148,5 @@ cask "slack"
 cask "temurin8"
 # Open-source code editor
 cask "visual-studio-code"
+# JavaScript IDE
+cask "webstorm"
