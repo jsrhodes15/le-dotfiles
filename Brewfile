@@ -112,12 +112,8 @@ brew "vmware-tanzu/carvel/kapp"
 brew "vmware-tanzu/carvel/ytt"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
-# Prebuilt OpenJDK binaries
-cask "adoptopenjdk8"
 # Apple TV Aerial screensaver
 cask "aerial"
-# Screen recorder and video editor
-cask "camtasia"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
