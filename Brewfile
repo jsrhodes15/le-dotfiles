@@ -122,7 +122,6 @@ cask "docker"
 cask "firefox"
 # Web browser
 cask "firefox-developer-edition"
-# Font
 cask "font-fira-code-nerd-font"
 # Web browser
 cask "google-chrome"
@@ -150,3 +149,5 @@ cask "temurin8"
 cask "visual-studio-code"
 # JavaScript IDE
 cask "webstorm"
+# Video communication and virtual meeting platform
+cask "zoom"
