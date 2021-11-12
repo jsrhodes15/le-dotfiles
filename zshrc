@@ -6,9 +6,9 @@ export ZSH=/Users/$USER/.oh-my-zsh
 # Enable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
 # Display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+#COMPLETION_WAITING_DOTS="true"
 # Disable marking untracked files as 'dirty' in git
-DISABLE_UNTRACKED_FILES_DIRTY="true"
+#DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 plugins=(
   git
@@ -32,9 +32,9 @@ source $ZSH/oh-my-zsh.sh
 ##### User configuration #####
 # ------------------------------------------------------------------------------
 # Add homebrew-installed tool's man pages to path
-export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/opt/homebrew/man:$MANPATH"
 # SSH Key Path
-export SSH_KEY_PATH="~/.ssh/dsh_id"
+#export SSH_KEY_PATH="~/.ssh/dsh_id"
 # STARSHIP theme
 eval "$(starship init zsh)"
 
@@ -53,7 +53,7 @@ eval "`fnm env`"
 # ------------------------------------------------------------------------------
 # GCLOUD - google cloud CLI
 # ------------------------------------------------------------------------------
-export PATH=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH
+#export PATH=/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH
 
 # ------------------------------------------------------------------------------
 # Aliases
@@ -68,8 +68,8 @@ if [ -f ~/.zsh_secrets ]; then
 source ~/.zsh_secrets
 fi
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Extend history size
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
@@ -78,7 +78,7 @@ SAVEHIST=100000
 # ------------------------------------------------------------------------------
 # MongoDB (to be able to use the shell)
 # ------------------------------------------------------------------------------
-export PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
+#export PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
 
 # ------------------------------------------------------------------------------
 # Exzeo stuff

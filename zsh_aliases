@@ -82,5 +82,5 @@ alias tmux='TERM=screen-256color-bce tmux'
 alias harmony='cd ~/Developer/harmony'
 
 #Init 'thefuck'
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
 
