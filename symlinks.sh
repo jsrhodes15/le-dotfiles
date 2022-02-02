@@ -11,7 +11,7 @@ dir=$(pwd)
 # old dotfiles backup directory
 olddir=~/dotfiles_old
 # list of files/folders to sylink in homedir
-files="vimrc vim gitconfig gitignore zshrc zsh_aliases zsh_secrets tmux.conf ticker.yaml"
+files="vimrc vim gitconfig gitignore zshrc zsh_aliases zsh_secrets"
 
 ##########
 
@@ -34,7 +34,7 @@ for file in $files; do
 done
 
 # TODO figure out a way to reuse above logic, without prepending a "." to the Brewfile (silly rubyists)
-echo "Moving Brewfile from ~ to $olddir"
-mv ~/Brewfile $olddir/Brewfile
-echo "Creating symlink to Brewfile in home directory."
-ln -s $dir/Brewfile ~/Brewfile
+#echo "Moving Brewfile from ~ to $olddir"
+#mv ~/Brewfile $olddir/Brewfile
+#echo "Creating symlink to Brewfile in home directory."
+#ln -s $dir/Brewfile ~/Brewfile

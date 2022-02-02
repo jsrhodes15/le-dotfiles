@@ -42,7 +42,11 @@ eval "$(starship init zsh)"
 # GO
 # ------------------------------------------------------------------------------
 export GOPATH=$HOME/Developer/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$GOPATH/bin:$PATH
+# ------------------------------------------------------------------------------
+# RUST
+# ------------------------------------------------------------------------------
+export PATH=$HOME/.cargo/bin:$PATH
 
 # ------------------------------------------------------------------------------
 # FNM - node version manager
@@ -88,8 +92,8 @@ export DOCKER_REGISTRY=registry.exzeo.io/docker
 # ------------------------------------------------------------------------------
 # Howchoo stuff
 # ------------------------------------------------------------------------------
-export HOWCHOO_DIR=/Users/jordanrhodes/Developer/howchoo/Howchoo-django  # Added by howchoo
-PATH=$PATH:$HOWCHOO_DIR/bin/commands  # Added by howchoo
+#export HOWCHOO_DIR=/Users/jordanrhodes/Developer/howchoo/Howchoo-django  # Added by howchoo
+#PATH=$PATH:$HOWCHOO_DIR/bin/commands  # Added by howchoo
 
 # ------------------------------------------------------------------------------
 # Serverless framework

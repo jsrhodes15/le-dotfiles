@@ -2,8 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
-# Yet another cross-platform graphical process/system monitor
-brew "bottom"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Fast and simple Node.js version manager
@@ -20,12 +20,18 @@ brew "rustup-init"
 brew "starship"
 # Watch files and take action when they change
 brew "watchman"
+# In terminal graphical metrics for your *nix system
+brew "zenith"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 # Apple TV Aerial screensaver
 cask "aerial"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Dummy Display for Apple Silicon Macs to achieve custom resolutions
+cask "betterdummy"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Web browser
