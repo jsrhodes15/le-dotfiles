@@ -17,6 +17,7 @@
   bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
 [core]
 	excludesfile = ~/.gitignore
+	editor = /usr/bin/vim
 [pull]
 	rebase = true
 [status]
