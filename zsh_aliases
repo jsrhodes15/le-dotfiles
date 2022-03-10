@@ -19,7 +19,7 @@ alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpas
 alias path='echo -e ${PATH//:/\\n}'
 
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
-alias reloadcli="source $HOME/.zshrc"
+alias recli="source $HOME/.zshrc"
 
 # Git
 # Show all git aliases
@@ -48,6 +48,7 @@ dclose() { test -z "$(docker ps -q 2>/dev/null)" && osascript -e 'quit app "Dock
 
 # Formatting for docker ps output.
 dpretty() { docker ps -a --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.ID}}' }
+dprint() { docker ps -a --format 'table {{.Names}}\t{{.Status}}\t{{.ID}}' }
 # Images
 alias dc='docker compose'
 alias di='docker images'
