@@ -1,3 +1,4 @@
+tap "cjbassi/ytop"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -6,12 +7,16 @@ tap "homebrew/core"
 brew "cocoapods"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
+# Command-line tool to interact with exercism.io
+brew "exercism"
 # Fast and simple Node.js version manager
 brew "fnm"
 # Distributed revision control system
 brew "git"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Lazier way to manage everything docker
+brew "lazydocker"
 # Install NodeJS versions
 brew "node-build"
 # Rust toolchain installer
@@ -20,12 +25,12 @@ brew "rustup-init"
 brew "starship"
 # Watch files and take action when they change
 brew "watchman"
-# In terminal graphical metrics for your *nix system
-brew "zenith"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# A TUI system monitor written in Rust
+brew "cjbassi/ytop/ytop"
 # Apple TV Aerial screensaver
 cask "aerial"
 # Tool to flash OS images to SD cards & USB drives
@@ -49,6 +54,8 @@ cask "robo-3t"
 cask "slack"
 # System monitor for the menu bar
 cask "stats"
+# IDE, client, and GUI for MongoDB
+cask "studio-3t"
 # Open-source code editor
 cask "visual-studio-code"
 # JavaScript IDE
