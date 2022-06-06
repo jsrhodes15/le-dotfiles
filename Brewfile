@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "homebrew/services"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
 # Secure runtime for JavaScript and TypeScript
@@ -11,6 +12,8 @@ brew "deno"
 brew "exercism"
 # Fast and simple Node.js version manager
 brew "fnm"
+# Fast and modern Ruby version manager written in Rust
+brew "frum"
 # Distributed revision control system
 brew "git"
 # Open source programming language to build simple/reliable/efficient software
@@ -19,8 +22,14 @@ brew "go"
 brew "lazydocker"
 # Install NodeJS versions
 brew "node-build"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Object-relational database system
+brew "postgresql"
 # Rust toolchain installer
 brew "rustup-init"
+# Command-line interface for https://speedtest.net bandwidth tests
+brew "speedtest-cli"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Watch files and take action when they change
@@ -46,10 +55,14 @@ cask "font-fira-code-nerd-font"
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Web browser
+cask "microsoft-edge"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # MongoDB management tool
 cask "robo-3t"
+# Ruby on Rails IDE
+cask "rubymine"
 # Team communication and collaboration software
 cask "slack"
 # System monitor for the menu bar
