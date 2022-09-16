@@ -18,3 +18,5 @@ log/
 SampleData/
 # secrets
 zsh_secrets
+#python virtual environments
+venv/
