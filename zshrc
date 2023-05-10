@@ -33,31 +33,14 @@ source $ZSH/oh-my-zsh.sh
 # ------------------------------------------------------------------------------
 # Add homebrew-installed tool's man pages to path
 export MANPATH="/opt/homebrew/man:$MANPATH"
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # SSH Key Path
 #export SSH_KEY_PATH="~/.ssh/dsh_id"
+
 # STARSHIP theme
 eval "$(starship init zsh)"
 
-# ------------------------------------------------------------------------------
-# GO
-# ------------------------------------------------------------------------------
-export GOPATH=$HOME/Developer/go
-export PATH=$GOPATH/bin:$PATH
-# ------------------------------------------------------------------------------
-# RUST
-# ------------------------------------------------------------------------------
-export PATH=$HOME/.cargo/bin:$PATH
-
-# ------------------------------------------------------------------------------
-# FNM - node version manager
-# ------------------------------------------------------------------------------
-export PATH=$HOME/.fnm:$PATH
-eval "`fnm env`"
-
-# ------------------------------------------------------------------------------
-# GCLOUD - google cloud CLI
-# ------------------------------------------------------------------------------
-#export PATH=/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH
 
 # ------------------------------------------------------------------------------
 # Aliases
@@ -72,12 +55,27 @@ if [ -f ~/.zsh_secrets ]; then
 source ~/.zsh_secrets
 fi
 
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Extend history size
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
+
+# ------------------------------------------------------------------------------
+# GO
+# ------------------------------------------------------------------------------
+export GOPATH=$HOME/Developer/go
+export PATH=$GOPATH/bin:$PATH
+
+# ------------------------------------------------------------------------------
+# RUST
+# ------------------------------------------------------------------------------
+export PATH=$HOME/.cargo/bin:$PATH
+
+# ------------------------------------------------------------------------------
+# FNM - node version manager
+# ------------------------------------------------------------------------------
+export PATH=$HOME/.fnm:$PATH
+eval "`fnm env --use-on-cd --version-file-strategy=recursive`"
 
 # ------------------------------------------------------------------------------
 # MongoDB (to be able to use the shell)
@@ -90,21 +88,22 @@ SAVEHIST=100000
 export DOCKER_REGISTRY=registry.exzeo.io/docker
 
 # ------------------------------------------------------------------------------
-# Howchoo stuff
-# ------------------------------------------------------------------------------
-#export HOWCHOO_DIR=/Users/jordanrhodes/Developer/howchoo/Howchoo-django  # Added by howchoo
-#PATH=$PATH:$HOWCHOO_DIR/bin/commands  # Added by howchoo
-
-# ------------------------------------------------------------------------------
 # Serverless framework
 # ------------------------------------------------------------------------------
 export PATH="$HOME/.serverless/bin:$PATH"
 
 # ------------------------------------------------------------------------------
-# Ruby Version Manager
+# Ruby Version Manager - frum
 # ------------------------------------------------------------------------------
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-#export PATH="$PATH:$HOME/.rvm/bin"
-# Enable frum
 eval "$(frum init)"
-#
+
+# ------------------------------------------------------------------------------
+# Python Version Manager
+# ------------------------------------------------------------------------------
+#eval "$(pyenv init -)"
+
+# ------------------------------------------------------------------------------
+# GCLOUD - google cloud CLI
+# ------------------------------------------------------------------------------
+#export PATH=/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH
+

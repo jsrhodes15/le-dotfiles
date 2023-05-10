@@ -1,11 +1,15 @@
 # Node
 npm-debug.log
-.npmrc
 # Mac
 .DS_Store
 
+# JETBRAINS
+
 # WebStorm
 .idea/
+
+#Goland plugin for AWS
+.aws-sam/
 
 # vi
 *~
@@ -20,3 +24,4 @@ SampleData/
 zsh_secrets
 #python virtual environments
 venv/
+
