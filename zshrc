@@ -96,7 +96,9 @@ eval "`fnm env --use-on-cd --version-file-strategy=recursive`"
 # ------------------------------------------------------------------------------
 export PATH="$HOME/.serverless/bin:$PATH"
 
-
+# ------------------------------------------------------------------------------
+# Google Cloud SDK
+# ------------------------------------------------------------------------------
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 
