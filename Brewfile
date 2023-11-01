@@ -1,10 +1,16 @@
 tap "aws/tap"
 tap "cjbassi/ytop"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
+tap "homebrew/cask-versions"
 tap "homebrew/services"
+tap "stripe/stripe-cli"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
+brew "aws-sam-cli"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Command-line tools for fly.io services
@@ -17,8 +23,6 @@ brew "frum"
 brew "git"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Object-relational database system
 brew "postgresql@14"
 # Python version management
@@ -35,6 +39,8 @@ brew "starship"
 brew "watch"
 # Watch files and take action when they change
 brew "watchman"
+# Internet file retriever
+brew "wget"
 # JavaScript package manager
 brew "yarn"
 # UNIX shell (command interpreter)
@@ -43,8 +49,8 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
-brew "aws/tap/aws-sam-cli"
+# Stripe CLI utility
+brew "stripe/stripe-cli/stripe"
 # Apple TV Aerial screensaver
 cask "aerial"
 # Tool to flash OS images to SD cards & USB drives
@@ -59,6 +65,8 @@ cask "firefox"
 cask "font-fira-code-nerd-font"
 # Web browser
 cask "google-chrome"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "google-cloud-sdk"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # JetBrains tools manager
@@ -85,3 +93,15 @@ cask "studio-3t"
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
+# OpenJDK distribution from Azul
+cask "zulu11"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "zhuangtongfa.material-theme"
