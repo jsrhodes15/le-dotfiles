@@ -41,19 +41,16 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # STARSHIP theme
 eval "$(starship init zsh)"
 
-
 # ------------------------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------------------------
-source ~/.zsh_aliases
+source ~/.zsh_aliases 2> /dev/null
 
 # ------------------------------------------------------------------------------
 # Secrets, tokens, etc
 # ------------------------------------------------------------------------------
-if [ -f ~/.zsh_secrets ]; then
 # Untracked file for storing creds - this will need to be manually created
-source ~/.zsh_secrets
-fi
+source ~/.zsh_secrets 2> /dev/null
 
 # Extend history size
 HISTFILE=~/.zsh_history
@@ -108,3 +105,6 @@ source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Added by Toolbox App
+export PATH="$PATH:/Users/jsrhodes/Library/Application Support/Jetbrains/Toolbox/scripts"
