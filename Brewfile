@@ -1,8 +1,6 @@
 tap "aws/tap"
 tap "cjbassi/ytop"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
 tap "stripe/stripe-cli"
 # Cryptography and SSL/TLS Toolkit
