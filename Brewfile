@@ -1,5 +1,4 @@
 tap "aws/tap"
-tap "cjbassi/ytop"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "stripe/stripe-cli"
@@ -7,10 +6,24 @@ tap "stripe/stripe-cli"
 brew "openssl@3"
 # CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 brew "aws-sam-cli"
+# Cross-platform make
+brew "cmake"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
+# Collection of reusable C++ library artifacts developed at Facebook
+brew "folly"
+# C++14 implementation of the TLS-1.3 standard
+brew "fizz"
+# Modular, composable client/server abstractions framework
+brew "wangle"
+# Facebook's branch of Apache Thrift, including a new C++ server
+brew "fbthrift"
+# Thrift functions for querying information from a service
+brew "fb303"
+# Shared library for Watchman and Eden projects
+brew "edencommon"
 # Command-line tools for fly.io services
 brew "flyctl"
 # Fast and simple Node.js version manager
@@ -21,14 +34,20 @@ brew "frum"
 brew "git"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Next-gen compiler infrastructure
+brew "llvm"
 # Object-relational database system
 brew "postgresql@14"
+# Object-relational database system
+brew "postgresql@15"
 # Python version management
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # Rust toolchain installer
-brew "rustup-init"
+brew "rustup"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Cross-shell prompt for astronauts
@@ -49,17 +68,14 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # Stripe CLI utility
 brew "stripe/stripe-cli/stripe"
-# Apple TV Aerial screensaver
-cask "aerial"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
+# App to build and share containerised applications and microservices
 cask "docker"
 # Web browser
 cask "firefox"
-# Developer targeted fonts with a high number of glyphs
 cask "font-fira-code-nerd-font"
 # Web browser
 cask "google-chrome"
@@ -69,14 +85,24 @@ cask "google-cloud-sdk"
 cask "iterm2"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
+# Kubernetes IDE
+cask "lens"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
+# Multi-platform web browser
+cask "microsoft-edge"
 # Spreadsheet software
 cask "microsoft-excel"
 # Email client
 cask "microsoft-outlook"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Minimal installer for conda specific to conda-forge
+cask "miniforge"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# Replacement for Docker Desktop
+cask "orbstack"
 # Collaboration platform for API development
 cask "postman"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -85,15 +111,14 @@ cask "rectangle"
 cask "slack"
 # System monitor for the menu bar
 cask "stats"
-# IDE, client, and GUI for MongoDB
-cask "studio-3t"
 # Open-source code editor
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
 # OpenJDK distribution from Azul
-cask "zulu11"
+cask "zulu@11"
 vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
