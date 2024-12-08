@@ -75,23 +75,13 @@ export PATH=$HOME/.fnm:$PATH
 eval "`fnm env --use-on-cd --version-file-strategy=recursive`"
 
 # ------------------------------------------------------------------------------
-# Ruby Version Manager - frum
+# FRUM - ruby version manager
 # ------------------------------------------------------------------------------
 eval "$(frum init)"
 
-# ------------------------------------------------------------------------------
-# Python Version Manager
-# ------------------------------------------------------------------------------
-#eval "$(pyenv init -)"
-# ------------------------------------------------------------------------------
 # MongoDB (to be able to use the shell)
 # ------------------------------------------------------------------------------
 #export PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
-
-# ------------------------------------------------------------------------------
-# Serverless framework
-# ------------------------------------------------------------------------------
-export PATH="$HOME/.serverless/bin:$PATH"
 
 # ------------------------------------------------------------------------------
 # Google Cloud SDK
@@ -102,9 +92,6 @@ source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 # ------------------------------------------------------------------------------
 # Android SDK
 # ------------------------------------------------------------------------------
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# Added by Toolbox App
-export PATH="$PATH:/Users/jsrhodes/Library/Application Support/Jetbrains/Toolbox/scripts"
+# export ANDROID_HOME=$HOME/Library/Android/sdk
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
